@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadanie 7</title>
+<link rel="stylesheet" href="css/css.css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(window).scroll(function(){
+   var top = $(window).scrollTop();
+   var find_class_small = $.contains('nav', '.small');
+ 
+   if(top > 50 && find_class_small == false) { // tu zmieniamy wysokosc - gdy strona zjedzie 50px w dol
+    $('nav').addClass('small'); // nawigacja otrzyma klase small
+    $('.gora').css('display','none');
+   }
+   else {
+    $('nav').removeClass('small'); // w przeciwnym wypadku usuwamy klase small
+    $('.gora').css('display','block');
+   }
+});
+
+</script>
+
+
+</head>
+<body>
+    <header>
+<div class="gora">
+    <div class="lewa">
+        <ul>
+            <li>+48 756 383 238</li>
+        </ul>
+    </div>
+    <div class="prawa">
+        <ul>
+            <li><a href="#">FB</a></li>
+            <li><a href="#">INSTA</a></li>
+            <li><a href="#">YT</a></li>
+        </ul>
+    </div>
+</div>
+<nav>
+<div class="lewa2">
+        <a href="zadanie5.html"><img src="grafika/logo.png" alt="logo">
+</div>
+    <div class="prawa2">
+<ul>  
+    <li><a href="#">NOWOŚCI</a></li>
+    <li><a href="#">O NAS</a></li>
+    <li><a href="#">INICJATYWY</a></li>
+    <li><a href="#">WESPRZYJ NAS</a></li>
+    <li><a href="#">KONTAKT</a></li>
+    <li><a href="#">4. LECHSTARTER</a></li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="container">
+    <div class="zdjecie">
+        <img src="grafika/tlo.png" alt="tlo">
+</div>
+</div>
+<div class="container2">
+<h1>ODKRYWAMY. INSPIRUJEMY. TWORZYMY. WSPIERAMY.</h1>
+<h2>zmieniamy świat na lepszy</h2>
+
+<div class="koniec">
+<div class="prawa_koniec">
+<img src="grafika/zebranie2.jpg" alt="zebranie">
+
+</div>
+<div class="lewa_koniec">
+    <section>
+<h6>Kim jesteśmy?</h6>
+<h2>FUNDACJA RZESZOWSKA</h2>
+<hr>
+
+<p>Jesteśmy pasjonatami, którzy wierzą, że działając wspólnie mogą zmienić świat na lepszy. Łączy nas pragnienie
+    odkrywania historii i dziedzictwa regionalnego oraz chęć współtworzenia kultury i kształtowania tożsamości 
+    podkarpaciej.
+</p>
+
+<button href="#">O NAS</button>
+</section>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

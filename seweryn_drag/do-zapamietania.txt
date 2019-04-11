@@ -1,0 +1,2 @@
+pulpit-zdalny: atena
+Praktyki 2018

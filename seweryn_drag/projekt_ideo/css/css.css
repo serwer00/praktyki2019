@@ -1,0 +1,145 @@
+/* GÓRNE MENU */
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width:100%;
+    background-color:#033c58;
+    height:85px;
+    position:fixed;
+    top:0;
+}
+
+nav.gorne_menu {
+    width:63%;
+    height:85px;
+    margin:auto;
+
+}
+
+nav.gorne_menu img {
+    float:left;
+    width:20%;
+    height:160px;
+}
+
+nav.gorne_menu ul {
+    width:80%;
+    margin: 0;
+    padding: 0;
+    float:left;
+    list-style-type: none;
+    height:85px;
+}
+
+nav.gorne_menu ul li {
+    display:inline;
+    width:16%;
+    padding:4%;
+    height:85px;
+}
+
+nav.gorne_menu ul li:first-child {
+    margin-left:2%;
+}
+
+nav.gorne_menu ul li a {
+    text-decoration: none;
+    color:white;
+    font-size:20px;
+    font-family: 'Dosis', sans-serif;
+    line-height: 85px;
+}
+
+nav.gorne_menu ul li a:hover {
+    text-decoration: underline;
+}
+.szukajka input {
+    padding-left:10px;
+    background-color:  #637c8f;
+    border:none;
+    height:30px;
+
+}
+
+.szukajka {
+    float:right;
+    position:absolute;
+    right:3%;
+    top:28px;
+}
+
+/*PONIZEJ MENU GORNEGO */
+
+.container {
+    width:100%;
+}
+
+.boczne_menu {
+    position:fixed;
+    left:0;
+    width:10%;
+    top:85px;
+    padding-top:40px;
+}
+
+.boczne_menu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+padding-left:20%;
+}
+
+.boczne_menu ul li {
+    text-decoration:none;
+    font-family: 'Dosis', sans-serif;
+    font-size:18px;
+    color:#033c58;
+    padding-bottom:8px;
+}
+
+.boczne_menu ul li.fb {
+    padding-bottom:2px;
+}
+
+.boczne_menu ul li a {
+    text-decoration:none;
+    font-family: 'Dosis', sans-serif;
+    font-size:18px;
+    color:#033c58;
+}
+
+.boczne_menu ul li a:hover{
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    border-bottom: 2px dotted #033c58;
+    background: white;
+}
+
+.strzalka
+{
+    position:fixed;
+    overflow:hidden;
+    left:9%;
+    margin-top:280px;
+}
+
+.menu {
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    float:left;
+}
+
+.zwijanie {
+    width:15%;
+    float:right;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,360 @@
+@media screen and (min-width: 1080px){
+
+body,html {
+    margin: 0;
+    padding: 0;
+    background-color:#F3F3F3
+
+}
+
+.container {
+    width:100%;
+        height: 100%;
+        margin-top:50px;
+    
+}
+
+.menu {
+    width:15%;
+    float:left;
+    padding-left:2%;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height:100%;
+    margin-left: 5%;
+}
+
+.menu a {
+    text-decoration: none;
+    color:black;
+}
+
+.menu h1 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-top:100px;
+    
+}
+
+ul li {
+    line-height: 35px;
+}
+
+ul li ul {
+    visibility: hidden;
+    transform: scaleY(0); 
+    -webkit-transform: scaleY(0);
+    transform-origin: 50% 0; 
+    -webkit-transform-origin: 50% 0;
+    transition: 500ms; 
+   position:absolute;
+        margin: 0;
+    padding: 0;
+}
+
+ul li:hover ul {
+position:relative;
+visibility: visible;
+transform: scaleY(1); 
+     -webkit-transform: scaleY(1);
+    }
+
+ul li ul li {
+    font-size: 12px;
+    line-height: 25px;
+    margin-left:3%;
+}
+
+.pion {
+    float:left;
+    width:20%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F3F3;
+}
+
+.pierwszy {
+    width:100%;
+    position:relative;
+    margin-bottom:60px;
+
+}
+
+.pion img {
+    width:100%;
+    max-height: 100%;
+}
+
+.drugi {
+        width:100%;
+    margin-bottom:60px;
+    position: relative;
+}
+
+.drugi2 {
+    background-color: white;
+    width:90%;
+    margin-bottom: 60px;
+    height:100%;
+    padding:5%;
+    margin-top:10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.drugi2 a {
+    display: inline;
+    float:left;
+    text-decoration: none;
+    color:black;
+    margin-right:10px;
+    font-size:12px;
+}
+
+.drugi2 a:hover {
+    color:grey;
+}
+
+.drugi2 a.naglowek:hover {
+    text-decoration: underline;
+    color:black;
+}
+
+.drugi2 h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.drugi2 h1 {
+    margin: 0;
+    padding: 0;
+    font-size:25px;
+}
+
+
+.drugi2 p {
+    color:grey;
+    font-size:14px;
+    width:100%;
+    
+}
+
+.trzeci {
+    width:100%;
+    margin-bottom:60px;
+    position: relative;
+
+}
+
+.trzeci2 {
+    background-color: white;
+    width:90%;
+    margin-bottom: 60px;
+    height:100%;
+    padding:5%;
+    margin-top:10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.trzeci2 h1 {
+    font-size: 25px;
+}
+
+.trzeci2 a {
+    color:grey;
+    font-size:15px;
+}
+
+.czwarty {
+        width:100%;
+        margin-bottom:60px;
+        height: 100%;
+        background-color: #fff;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        position: relative;
+
+}
+
+.czwarty a {
+    display: inline;
+    float:left;
+    text-decoration: none;
+    color:black;
+    margin-right:10px;
+    font-size:12px;
+}
+
+.czwarty h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.czwarty h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.czwarty_tekst {
+    width:90%;
+    padding:5%;
+}
+.czwarty_tekst p {
+    color:grey;
+    font-size:14px;
+    width:100%;
+}
+
+/* TEKSTY I ANIMACJE NA OBRAZACH */
+/* pierwszy gora, pierwsza lewa */
+
+.tekst_na_obrazku {
+    position:absolute;
+    width:80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height:100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     }
+
+.tekst_na_obrazku ul {
+margin: 0;
+padding: 0;
+width:100%;
+}
+
+
+
+.tekst_na_obrazku a {
+    display: inline;
+    float:left;
+    text-decoration: none;
+    color:black;
+    font-size:13px;
+    margin-right:8px;
+    visibility:hidden;
+    margin-top: 10%;
+}
+
+.tekst_na_obrazku h4 {
+    margin: 0;
+    padding: 0;
+    font-size:13px;
+
+}
+
+span {
+    margin: 0;
+    visibility:hidden;
+    font-size:15px;
+    margin-top: 10%;
+
+}
+
+.tekst_na_obrazku:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+background-image: url('grafika/krzeslo.jpg');
+color:rgba(0,0,0,1);
+}
+
+
+.tekst_na_obrazku:hover a,span {
+    visibility: visible;
+}
+
+.tekst_na_obrazku:hover a:hover {
+    color:grey;
+}
+
+.tekst_na_obrazku h1{
+    font-size: 25px;
+    color:black;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.tekst_na_obrazku:hover h1:hover {
+    text-decoration: underline;
+}
+
+#themes_kingdom {
+margin-top:330px;
+padding: 0;
+}
+
+#themes_kingdom:hover {
+    text-decoration: underline;
+}
+
+/* lewa, drugi */
+.tekst_na_obrazku2 {
+    position:absolute;
+    width:80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height:100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    }
+
+
+.tekst_na_obrazku2 a {
+    display: inline;
+    float:left;
+    text-decoration: none;
+    color:black;
+    font-size:13px;
+    margin-right:8px;
+    visibility:hidden;
+    margin-top: 10%;
+}
+
+.tekst_na_obrazku2 h4 {
+    margin: 0;
+    padding: 0;
+    font-size:13px;
+
+}
+
+
+.tekst_na_obrazku2:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+background-image: url('grafika/krzeslo.jpg');
+color:rgba(0,0,0,1);
+}
+
+
+.tekst_na_obrazku2:hover a {
+    visibility: visible;
+}
+
+.tekst_na_obrazku2:hover a:hover {
+    color:grey;
+}
+
+.tekst_na_obrazku2 h1 {
+    font-size: 25px;
+    color:black;
+margin-top:50px;
+}
+
+
+#themes_kingdom2 {
+margin-top:220px;
+}
+
+.tekst_na_obrazku2 h1 {
+    visibility: hidden;
+}
+
+.tekst_na_obrazku2:hover h1 {
+    visibility: visible;
+}
+}
